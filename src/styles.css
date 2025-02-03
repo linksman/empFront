@@ -1,0 +1,139 @@
+/* 🎨 Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+}
+
+/* 🔘 Fancy Buttons */
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-btn {
+    background-color: #28a745;
+    color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.add-btn:hover {
+    background-color: #218838;
+}
+
+/* 🚀 Employee List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.employee-card {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.employee-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ❌ Delete Button */
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* 📝 Fancy Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* 🌙 Dark Mode Toggle */
+.dark-mode {
+    background: #333;
+    color: white;
+}
+
+.dark-mode .container {
+    background: #444;
+    color: white;
+}
+
+.dark-mode .employee-card {
+    background: #555;
+    box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode input {
+    background: #666;
+    color: white;
+    border-color: #777;
+}

@@ -1,0 +1,86 @@
+/* 🌟 Fancy Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #007bff;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.nav-brand a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* ✅ Stylish Add Employee Button */
+.add-employee-btn {
+    background: #28a745;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.add-employee-btn:hover {
+    background: #218838;
+}
+
+/* 🌙 Dark Mode Toggle */
+.dark-mode-toggle {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.dark-mode-toggle:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* 🌙 Dark Mode Styling */
+.dark-mode .navbar {
+    background: #222;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .nav-links a {
+    color: #f4f4f4;
+}
+
+.dark-mode .add-employee-btn {
+    background: #17a2b8;
+}
+
+.dark-mode .dark-mode-toggle {
+    border-color: #f4f4f4;
+}
