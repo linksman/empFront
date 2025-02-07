@@ -1,7 +1,8 @@
 /* 🎨 Global Styles */
+/* 🎨 Global Styles with Gradient Background */
 body {
     font-family: 'Poppins', sans-serif;
-    background: #f4f4f9;
+    background: linear-gradient(135deg, red , #00c6ff); /* Blue Gradient */
     color: #333;
     margin: 0;
     padding: 0;
@@ -9,6 +10,13 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    transition: background 0.5s ease-in-out;
+}
+
+/* 🌙 Dark Mode */
+.dark-mode {
+    background: linear-gradient(135deg, #222, #444); /* Dark Mode Gradient */
+    color: white;
 }
 
 .container {
@@ -19,7 +27,18 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    transition: background 0.3s ease-in-out;
 }
+
+.container h1 {
+    font-family: cursive;
+}
+
+.dark-mode .container {
+    background: #333;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
 
 h1 {
     text-align: center;
@@ -66,6 +85,7 @@ ul {
     align-items: center;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
+    background: linear-gradient(135deg, red , #00c6ff); /* Blue Gradient */
 }
 
 .employee-card:hover {
@@ -130,6 +150,8 @@ input:focus {
 .dark-mode .employee-card {
     background: #555;
     box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.1);
+    background: linear-gradient(135deg, yellowgreen , #00c6ff); /* Blue Gradient */
+
 }
 
 .dark-mode input {

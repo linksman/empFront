@@ -5,6 +5,7 @@ import EmployeeList from "./pages/EmployeeList";
 import CreateEmployee from "./pages/CreateEmployee";
 import Navbar from "./components/Navbar";
 import "./styles.css";
+import Game from "./pages/tictactoe";
 
 const App = () => {
     const [darkMode, setDarkMode] = useState(false);
@@ -13,13 +14,11 @@ const App = () => {
         <div className={darkMode ? "dark-mode" : ""}>
             <Router>
                 <Navbar toggleDarkMode={() => setDarkMode(!darkMode)} darkMode={darkMode} />
-                <button className="toggle-dark-mode" onClick={() => setDarkMode(!darkMode)}>
-                    {darkMode ? "☀ Light Mode" : "🌙 Dark Mode"}
-                </button>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/employees" element={<EmployeeList />} />
                     <Route path="/employees/new" element={<CreateEmployee />} />
+                    <Route path="/tictactoe" element={<Game />} />
                 </Routes>
             </Router>
         </div>

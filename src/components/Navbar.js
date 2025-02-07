@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css"; // Import navbar-specific styles
+import Button from '@mui/material/Button';
+import {Tooltip} from "@mui/material";
 
 const Navbar = ({ toggleDarkMode, darkMode }) => {
     return (
@@ -8,7 +10,9 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
             <div className="nav-brand">
                 <Link to="/">🌟 Employee Manager</Link>
             </div>
-
+            <Tooltip title="tooltool">
+                <Button variant="contained">גיא</Button>
+            </Tooltip>
             <ul className="nav-links">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/employees">Employees</Link></li>
